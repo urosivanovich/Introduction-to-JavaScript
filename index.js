@@ -19,8 +19,8 @@ Do the following:
 
    HINT: no function required
 */
-let voitngAge = 18;
-  if (voitngAge >= 18) {
+let votingAge = 18;
+  if (votingAge >= 18) {
     console.log(true)
   } else {
     console.log(false)
@@ -96,11 +96,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-// function dogYears(age){
-//   return age * 7;
-// }
+function dogYears (age){
+  return age * 7;
+}
 
-// console.log(dogYears(28));
+console.log(dogYears(28));
 
 
 
@@ -190,13 +190,13 @@ function game(user, computer){
   if ( user === computer) {
     console.log(`it's a tie`);
   } else if (user === 'rock' && computer === 'scissors'){
-    console.log('you win!');
+    console.log(`you win!`);
   } else if (user === 'paper' && computer === 'rock') {
-    console.log('you win!');
+    console.log(`you win!`);
   } else if (user === 'scissors' && computer === 'paper') {
-    console.log('you win!');
+    console.log(`you win!`);
   } else {
-    console.log('you loose!')
+    console.log(`you loose!`)
   }
 }
 console.log(game('rock', computer))
