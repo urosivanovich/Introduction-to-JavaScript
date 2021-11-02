@@ -19,6 +19,11 @@ Do the following:
 
    HINT: no function required
 */
+let voitngAge = 18;
+  if (voitngAge >= 18) {
+    console.log(true)
+  }
+
 
 
 
@@ -47,7 +52,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let age = "1999";
+age = 1999;
+console.log(age);
 
 
 
@@ -60,9 +67,16 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+    return a * b
 }
+multiply(6,7);
+
+console.log(multiply(22,3));
+
+
+
+
 
 
 
@@ -76,9 +90,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(){
+  return 5 * 7;
 }
+dogYears(5);
+console.log(dogYears(5));
+
 
 
 
@@ -127,7 +144,7 @@ function hungryDog(weight, age){
   }
 }
 
-console.log('task 3', hungryDog(15, 1));
+// console.log('task 3', hungryDog(15, 1));
 
 
 
