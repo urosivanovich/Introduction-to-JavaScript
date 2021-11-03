@@ -181,20 +181,20 @@ if(computer <= 0.34) {
   computer = 'rock';
 } else if(computer <= 0.67) {
   computer = 'paper';
-} else {
+} else if (computer > 0.67) {
   computer = 'scissors';
 }
 console.log(computer);
 
 function game(user, computer){
   if ( user === computer) {
-    console.log(`it's a tie`);
+    return `it's a tie`;
   } else if (user === 'rock' && computer === 'scissors'){
-    console.log(`you win!`);
+    return `you win!`;
   } else if (user === 'paper' && computer === 'rock') {
-    console.log(`you win!`);
+    return `you win!`;
   } else if (user === 'scissors' && computer === 'paper') {
-    console.log(`you win!`);
+    return `you win!`;
   } else {
     console.log(`you loose!`)
   }
