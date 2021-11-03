@@ -233,7 +233,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-  return cm * 0.0328084;
+  return cm / 30.48;
 }
 console.log(feet(23));
 
@@ -281,12 +281,12 @@ if (score >= 90) {
   return `you got a C`;
 }else if (score >= 60 && score <=69) {
   return `you got a D`;
-}else {
-  `you got an F`;
+}else if (score < 60) {
+  return `you got an F`;
 }
 }
 
-console.log(grade(77));
+console.log(grade(20));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
